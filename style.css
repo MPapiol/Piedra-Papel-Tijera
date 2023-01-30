@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #EAE7B1;
+    color: #3C6255;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.juego {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #61876E;
+}
+
+.jugador_local {
+    height: 250px;
+    width: 225px;
+    text-align: center;
+}
+
+.jugador_local_movimiento {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.cpu {
+    height: 250px;
+    width: 225px;
+    text-align: center;
+}
+
+.cpu_movimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #61876E;
+    color: #EAE7B1;
+}
+
+#tipo_movimiento {
+    height: 75px;
+    width: 75px;
+}
+
+.espacio_resultado {
+    padding: 20px;
+}
+
+.marcador_partida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><u>Piedra, Papel o Tijera</u></h1>
+        </header>
+        <main>
+            <div class="juego">
+                <div class="jugador_local">
+                    <br>
+                    <h2>¿Que movimiento escoges?</h2>
+                    <br>
+                    <div class="jugador_local_movimiento">
+                        <label>
+                            <input type="radio" value="Piedra" name="p1" onclick="respuesta(this)"> <img
+                                id="tipo_movimiento" src="piedra.png">
+                        </label>
+                        <label>
+                            <input type="radio" value="Papel" name="p1" onclick="respuesta(this)"> <img
+                                id="tipo_movimiento" src="papel.png">
+                        </label>
+                        <label>
+                            <input type="radio" value="Tijera" name="p1" onclick="respuesta(this)"> <img
+                                id="tipo_movimiento" src="tijera.png">
+                        </label>
+                    </div>
+                    <label>
+                        <input type="submit" value="Jugar" name="p1" onclick="jugar()">
+                    </label>
+                    <br>
+                </div>
+                <div class="espacio_resultado">
+                    <h2 id="resultado">MARCADOR</h2>
+                    <br>
+                    <div class="marcador_partida">
+                        <h2 id="marcador_jugador">0</h2>
+                        <h2> &nbsp-&nbsp</h2>
+                        <h2 id="marcador_cpu">0</h2>
+                    </div>
+                </div>
+                <div class="cpu">
+                    <br>
+                    <h2>¡Movimiento del CPU!</h2>
+                    <br>
+                    <br>
+                    <div class="cpu_movimiento">
+                        <span id="tirada_cpu"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
